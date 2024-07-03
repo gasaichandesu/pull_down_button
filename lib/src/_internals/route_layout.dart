@@ -134,9 +134,7 @@ abstract class _PositionUtils {
         final padding =
             buttonHeight < kMinInteractiveDimensionCupertino ? 5 : 0;
 
-        isInBottomHalf
-            ? y -= childHeight + padding
-            : y += buttonHeight + padding;
+        y -= childHeight - padding;
     }
 
     return y;
